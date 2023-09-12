@@ -1,0 +1,115 @@
+/* Admin custom css */
+
+.sidebar{
+    --sidebar-width: 14rem;!important;
+}
+
+.sidebar-content{
+    font-size: .8rem;
+}
+
+.sidebar-content i{
+    font-size: 1.15rem;
+}
+
+.table-xls th,
+.table-xls td {
+    padding: 0.15rem 0.25rem !important; }
+
+.table-xxs th,
+.table-xxs td {
+    padding: 0.3rem 0.5rem !important; }
+
+.table-zero th,
+.table-zero td {
+    padding: 0rem 0rem !important; }
+
+.btn-xs, .btn-group-xs > .btn {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1.6667;
+    border-radius: 0.125rem; }
+
+.btn-xlg, .btn-xlg > .btn {
+    padding: 0.7rem 1rem;
+    font-size: .9rem;
+    line-height: 1.8;
+    border-radius: 0.3rem; }
+
+.btn-xxs, .btn-group-xxs > .btn {
+    padding: 0.1rem 0.3rem;
+    font-size: 0.7rem;
+    line-height: 1.6667;
+    border-radius: 0.1rem; }
+
+/* The switch - the box around the slider */
+.switchTheme {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switchTheme input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.switchTheme .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.switchTheme .slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 0px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    box-shadow: 0 0px 15px #2020203d;
+    background: white url('https://i.ibb.co/FxzBYR9/night.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.switchTheme input:checked + .slider {
+    background-color: #2196f3;
+}
+
+.switchTheme input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+.switchTheme input:checked + .slider:before {
+    -webkit-transform: translateX(21px);
+    -ms-transform: translateX(21px);
+    transform: translateX(21px);
+    background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Rounded sliders */
+.switchTheme  .slider.round {
+    border-radius: 34px;
+}
+
+.switchTheme .slider.round:before {
+    border-radius: 50%;
+}
